@@ -1,0 +1,22 @@
+# Imagem base com .NET SDK (para build)
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+WORKDIR /app
+
+# Copiar csproj e restaurar dependências
+COPY *.csproj ./
+RUN dotnet restore
+
+# Copiar tudo e publicar
+COPY . ./
+RUN dotnet publish -c Release -o out
+
+# Imagem final com runtime
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
+WORKDIR /app
+COPY --from=build /app/out ./
+
+# Expor porta (mesma que você usa no dotnet run)
+EXPOSE 5187
+
+# Comando para rodar a API
+ENTRYPOINT ["dotnet", "MonitoramentoEquipamentosPesados.dll"]
