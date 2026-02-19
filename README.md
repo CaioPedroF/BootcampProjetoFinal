@@ -32,7 +32,7 @@ services:
 
   api:
     build: .
-    container_name: monitoramento-api
+    container_name: monitoramentoequipamentospesados
     depends_on:
       db:
         condition: service_healthy
