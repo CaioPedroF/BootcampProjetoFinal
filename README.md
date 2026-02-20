@@ -5,7 +5,7 @@ Implementada em **.NET 7**, **PostgreSQL** e testável com **Insomnia**.
 
 
 ## Tecnologias Utilizadas
--.NET
+- .NET
 - ASP .NET ore
 - Entity Framework Core
 - PosteGreSQL(Dbeaver)
