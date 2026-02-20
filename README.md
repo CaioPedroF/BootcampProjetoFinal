@@ -12,7 +12,7 @@ Implementada em **.NET 7**, **PostgreSQL** e testável com **Insomnia**.
 - Insomia(Para Testes)
 
 
-## Como Executar o Projto
+## Como Executar o Projeto
 
 ### Pré-requesitos
 
