@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonitoramentoEquipamentosPesados")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5116eed834baff9feb588e4e0343aadb1ee3622")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonitoramentoEquipamentosPesados")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonitoramentoEquipamentosPesados")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

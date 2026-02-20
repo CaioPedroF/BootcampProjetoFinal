@@ -10,15 +10,16 @@ namespace MonitoramentoEquipamentosPesados.Data
         {
         }
 
-        // DbSet plural para código C#, mapeando para tabela singular "Equipamento"
-        public DbSet<Equipamento> Equipamentos { get; set; } = null!;
+        // DbSet pode continuar plural ou singular, não importa
+        public DbSet<Equipamento> Equipamentos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Mapeia explicitamente para a tabela existente no PostgreSQL
-            modelBuilder.Entity<Equipamento>().ToTable("Equipamento");
+            // Mapeia explicitamente a tabela para bater com o nome no PostgreSQL
+            modelBuilder.Entity<Equipamento>()
+                .ToTable("Equipamento"); // ← nome exato da tabela no banco
         }
     }
 }

@@ -20,7 +20,8 @@ namespace MonitoramentoEquipamentosPesados.Models
         public decimal Horimetro { get; set; }
 
         [Required]
-        public string StatusOperacional { get; set; } = "Operacional";
+        [StatusValido]
+        public string StatusOperacional { get; set; } = "Pendente"; 
 
         public DateTime? DataAquisicao { get; set; }
 

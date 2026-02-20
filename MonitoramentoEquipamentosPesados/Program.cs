@@ -1,24 +1,28 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MonitoramentoEquipamentosPesados.Data;
-using MonitoramentoEquipamentosPesados.Models;
+using System.Text.Json.Serialization; // 👈 IMPORTANTE
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
 
-
 // PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    var cs = builder.Configuration.GetConnectionString("DefaultConnection"); 
+    var cs = builder.Configuration.GetConnectionString("DefaultConnection");
     options.UseNpgsql(cs);
 });
 
-
-
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
-builder.Services.AddControllers();
+// ✅ CONFIGURAÇÃO CORRETA PARA ENUM COMO STRING
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(
+            new JsonStringEnumConverter());
+    });
 
 var app = builder.Build();
 

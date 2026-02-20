@@ -123,3 +123,4 @@ C:\Users\aluno\Desktop\ProjetoFinal\BootcampProjetoFinal\MonitoramentoEquipament
 C:\Users\aluno\Desktop\ProjetoFinal\BootcampProjetoFinal\MonitoramentoEquipamentosPesados\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\aluno\Desktop\ProjetoFinal\BootcampProjetoFinal\MonitoramentoEquipamentosPesados\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\aluno\Desktop\ProjetoFinal\BootcampProjetoFinal\MonitoramentoEquipamentosPesados\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\aluno\Desktop\ProjetoFinal\BootcampProjetoFinal\MonitoramentoEquipamentosPesados\obj\Debug\net10.0\MonitoramentoEquipamentosPesados.sourcelink.json
