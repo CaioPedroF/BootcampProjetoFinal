@@ -28,6 +28,19 @@ dotnet restore
 dotnet run
 Se o restore nao for use: dotnet add package Microsoft.EntityFrameworkCore  e  add package Swashbuckle.AspNetCore 
 
+
+### Modelo para Body no Insominia
+{
+  "codigo": "CAT-903F-000700",
+  "tipo": "Caminhao",
+  "modelo": "Caterpillar 900F",
+  "horimetro": 18234.5,
+  "statusOperacional": "Finalizado",
+  "dataAquisicao": "2025-11-23",
+  "localizacaoAtual": "Mina Carajás N4E"
+}
+
+
 ---
 
 ## 🚀 Como rodar via Docker Compose
