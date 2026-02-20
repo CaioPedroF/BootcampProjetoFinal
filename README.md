@@ -28,7 +28,7 @@ dotnet restore
 
 dotnet run
 
-Se o restore nao for use: dotnet add package Microsoft.EntityFrameworkCore  e  add package Swashbuckle.AspNetCore 
+Se o restore nao for use: dotnet add package Microsoft.EntityFrameworkCore     E     add package Swashbuckle.AspNetCore 
 
 
 ### Caminho do Projeto Na URL do Insominia
