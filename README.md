@@ -3,6 +3,30 @@
 API para gerenciar equipamentos de mina, como caminhões fora-de-estrada, escavadeiras, perfuratrizes, etc.  
 Implementada em **.NET 7**, **PostgreSQL** e testável com **Insomnia**.
 
+
+## Tecnologias Utilizadas
+-.NET
+- ASP .NET ore
+- Entity Framework Core
+- PosteGreSQL(Dbeaver)
+- Insomia(Para Testes)
+
+
+## Como Executar o Projto
+
+### Pré-requesitos
+
+
+- .NET SDK instalados
+- Banco de dados Configurado
+
+
+### Executar
+
+'''Powershell
+dotnet restore
+dotnet run
+
 ---
 
 ## 🚀 Como rodar via Docker Compose
