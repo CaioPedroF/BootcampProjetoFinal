@@ -32,10 +32,15 @@ Se o restore nao for use: dotnet add package Microsoft.EntityFrameworkCore  e  a
 ### Caminho do Projeto Na URL do Insominia
 
 POST - http://localhost:5187/api/equipamento
+
 DELETEBYID - http://localhost:5187/api/equipamento/13
+
 GET - http://localhost:5187/api/equipamento/
+
 GETBYID - http://localhost:5187/api/equipamento/13
+  
 PUTBYID - http://localhost:5187/api/equipamento/3
+  
 LISTAGEM - http://localhost:5187/api/equipamento/list?codigo=CAT-793F
 
 ### Modelo para Body no Insominia 
