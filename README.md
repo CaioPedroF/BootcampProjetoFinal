@@ -43,16 +43,25 @@ PUTBYID - http://localhost:5187/api/equipamento/3
   
 LISTAGEM - http://localhost:5187/api/equipamento/list?codigo=CAT-793F
 
+
 ### Modelo para Body no Insominia 
 
 {
+
   "codigo": "CAT-903F-000700",
+  
   "tipo": "Caminhao",
+  
   "modelo": "Caterpillar 900F",
+  
   "horimetro": 18234.5,
+  
   "statusOperacional": "Finalizado",
+  
   "dataAquisicao": "2025-11-23",
+  
   "localizacaoAtual": "Mina Carajás N4E"
+  
 }
 
 
