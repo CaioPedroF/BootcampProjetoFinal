@@ -25,7 +25,9 @@ Implementada em **.NET 7**, **PostgreSQL** e testável com **Insomnia**.
 
 '''Powershell
 dotnet restore
+
 dotnet run
+
 Se o restore nao for use: dotnet add package Microsoft.EntityFrameworkCore  e  add package Swashbuckle.AspNetCore 
 
 
